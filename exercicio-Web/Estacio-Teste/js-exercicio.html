@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <title>Olá Teste JS</title>
+    <meta charset="UTF-8"/>
+
+         <style>
+             body{
+                 background-color: burlywood;
+                
+            
+                
+             }
+            form{
+                text-align: center;
+                margin: 0 auto;
+           
+            }
+        </style>
+    </head>
+
+
+    <body>
+        
+
+        <form action="//server/app.asmx" method="get" onsubmit="return validar();">
+            Olá Mundo<br/>
+       
+            Nome:<input id="NomeFormulari" name="NomeFormulario" type="text"/><br/><br/>
+        Opção de Envio:<br/><br/>
+            <input id="PrimeiraOpEn" name="PrimeiraOpEnv" type="checkbox" value="Revista"/>
+        Revista Mensal
+            <input id="SegundaOpEn" name="SegundaOpEnv" type="checkbox" value="Digital"/>
+        Versão Digital
+            <input id="TerceiraOpEn" name="TerceiraOpEnv" type="checkbox" value="Mensagen"/>
+        Mensagen SMS<br/>
+            <input type="submit" value="Concluir Cadastro"/> 
+        </form>
+    
+
+     <script>
+        var objNome = document.getElementById("NomeFormulari");
+        var objOp1 = document.getElementById("PrimeiraOpEn");
+        var objOp2 = document.getElementById("SegundaOpEn");
+        var objOp3 = document.getElementById("TerceiraOpEn");
+
+        function validar(){
+            if(objNome.value==""){
+            alert("Nome deve ser preenchido");
+            objNome.focus();
+            return false;
+        }
+        
+            if(!objOp1.checked && !objOp2.checked && !objOp3.checked){
+                alert("Selecione uma das opções");
+                return false;
+            } 
+                return false;
+
+        }
+
+     </script>
+    </body>
+</html>

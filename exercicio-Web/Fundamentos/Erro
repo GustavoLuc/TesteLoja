@@ -1,0 +1,19 @@
+const somar = function(n1,n2){
+const soma = n1+n2
+
+    
+  switch(soma){
+    
+    case 10: 
+    console.log("acertou miseravi")
+    break
+    case 5: 
+    console.log("errou miseravi")
+    break
+}
+
+
+
+}
+
+somar(5,0)

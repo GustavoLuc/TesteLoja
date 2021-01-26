@@ -1,0 +1,47 @@
+
+// formas de utilizar a Função
+
+
+//função de forma literal
+function funcao1 () {} 
+
+
+//armazenar em uma variavel 
+const funcao2 = function () {return 20}
+
+//armazenar em uma array 
+const array = [ function (a,b){return a+b} ,funcao1,funcao2]
+
+console.log(array[0](20,50))
+
+//armazenar em um atributo de objeto 
+
+const obj = {}
+
+obj.falar = function (){return 'Ola Mundo'}
+
+console.log(obj.falar())
+
+//passar função como parametro para outra função
+
+function funcao3(){return console.log("Executando função")}
+
+function run(fun) {
+    fun()
+
+}
+
+run(funcao3)
+
+//uma função pode retornar/conter uma função
+
+function soma(a,b){
+    return function(c){
+        console.log(a+b+c)
+    }
+}
+
+soma(20,50)(20)
+
+const result = soma(20,50)
+result(4)

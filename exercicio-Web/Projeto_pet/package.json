@@ -1,0 +1,21 @@
+{
+  "name": "loja-pet",
+  "version": "1.0.0",
+  "description": "desenvolvendo loja completa",
+  "main": "loja",
+  "scripts": {
+    "test": "tester"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GustavoLuc/TesteLoja.git"
+  },
+  "keywords": [
+    "go"
+  ],
+  "author": "Gustavo",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

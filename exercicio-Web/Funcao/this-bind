@@ -1,0 +1,18 @@
+const pessoa = {
+    saudacao : 'Bom Dia',
+
+    falar(){
+        console.log(this.saudacao)
+    }
+
+}
+
+pessoa.falar()
+
+const falar = pessoa.falar
+
+falar() //conflito estre paradigma: Funcional e POO
+
+const falarDePessoa = pessoa.falar.bind(pessoa)//"bind" faz com que o this selecione o objeto corretamete , entre "()" vc coloca o objeto que this deve representar 
+
+falarDePessoa()
