@@ -2,14 +2,19 @@
 
 (async () => {
     const connexao_banco = require("./connexao_banco");
- /*   console.log('Começou!');
+   // console.log('Começou!');
 
 //INSERT
 
-    console.log('INSERT INTO CLIENTES');
-    const result = await connexao_banco.insertCustomer({nome: "Zé", tel: 18});
-    console.log(result);
-
+   // console.log('INSERT INTO CLIENTES');
+   
+   async function cadastrandoCliente(n,t){
+   const result = await connexao_banco.insertCustomer({nome: n, tel: t});
+    console.log("Cadastro concluido com Sucesso!")
+    
+   }
+   module.exports = cadastrandoCliente
+/*
 //SELECT 
 
     console.log('SELECT * FROM CLIENTE');
@@ -31,16 +36,16 @@ console.log('update realizado');
 //DELETE
 
 console.log('DELETE FROM CLIENTES');*/
-async function deleteSelecionado(numero,numero2){
+/*async function deleteSelecionado(numero,numero2){
     while(numero<=numero2){
 var result3 = await connexao_banco.deleteCustomer(numero);
 numero++
     }
 return console.log(result3)
-}
+}*/
 //const result4 = await connexao_banco.deleteCustomer(15);
 //console.log(result4);
 
-deleteSelecionado(9,20)
+
     
 })();

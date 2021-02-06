@@ -1,18 +1,25 @@
+* {
+  margin:0;
+  padding:0;
+  list-style:none;
+  vertical-align:baseline;
+}
 .topo{
   width:100%;
-  height: 40px;
+  height: 10px;
 
   background-color: black;
   
 }
 .logo{
   
-  width: 20%;
-  display: block;
+  width: 15%;
+  float:left;
     margin-left: auto;
     margin-right: auto;
 
 }
+
 body{
   background-color: #F0F4F6;
 }
@@ -21,6 +28,23 @@ body{
   margin-top: 20px;
   margin-bottom: 20px;
   
+}
+
+.card.mb-4.shadow-sm{
+height: 95%;
+border-radius: 30px;
+
+}
+
+.bd-placeholder-img{
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+
+.col-md-4{
+height: 535px;
+
 }
 
 
@@ -37,6 +61,7 @@ body{
   background-color: rgba(0, 0, 0, .85);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
+  
 }
 .site-header a {
   color: #999;

@@ -41,4 +41,4 @@ async function deleteCustomer(id){
 module.exports = {selectCustomers,insertCustomer,updateCustomer, deleteCustomer}
 
 
-exports = connect()
+exports = connect() 
